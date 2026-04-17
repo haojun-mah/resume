@@ -1,0 +1,238 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.9in}
+\addtolength{\textheight}{1.6in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{-2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{black}\small #2}\vspace{0pt}\\ % top row of resume entry
+      #3 & {\color{black} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{black}\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=-1pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\color{black}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\LARGE Mah Hao Jun} \\ \vspace{3pt}
+    \small \texttt{+65 9236 0786} \hspace{1pt} $|$
+    \hspace{1pt} \href{mailto:mahhaojun03@gmail.com}{\texttt{mahhaojun03@gmail.com}} \hspace{1pt} $|$
+    \hspace{1pt} \href{https://www.linkedin.com/in/hao-jun-mah-7b22b7210/}{\myuline{LinkedIn}} \hspace{1pt} $|$
+    \hspace{1pt} \href{https://github.com/haojun-mah}{\myuline{GitHub}} \hspace{1pt} $|$
+    \hspace{1pt} \href{https://www.haojunmah.app}{\myuline{Portfolio}} \hspace{1pt}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National University of Singapore}{Aug. 2024 -- May 2028}
+      {Bachelor of Computing, Computer Science}{Singapore}
+      \vspace{0pt}\\
+      \small{\textbf{Cumulative GPA}: 4.5} \\
+      \small{\textbf{Relevant Coursework}: Software Engineering; Data Structures and Algorithms; Programming Methodology}
+      \vspace{-2pt}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Fly Fairly}{Jan. 2026 -- Apr. 2026}
+      {Software Engineer Intern}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Identified and eliminated 3 key operational bottlenecks through structured stakeholder interviews.}
+        \resumeItem{Built back-office reporting dashboard with Next.js, reducing cross-team coordination overhead and improving sprint throughput by an estimated 20\%.}
+        \resumeItem{Proposed and documented modernized tech stack solutions for interviewed problems which are adopted into the technical roadmap for 3 out of 6 company's departments for future implementation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Toppan Ecquaria}{May 2025 -- Jul. 2025}
+      {Software Engineer Intern}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Designed and integrated RAG pipelines and LLM-based AI agents into enterprise SaaS products, enabling context-aware document Q\&A; deployed across 10+ client companies, directly contributing to new product adoption and upsell opportunities.}
+        \resumeItem{Enhanced an AI lip dubbing system by leveraging open-source audio models such as Kokoro and the LatentSync lip-sync model, enabling multilingual AI video dubbing solutions sold at \$5,000 per license.}
+        \resumeItem{Refactored and modernized multiple web applications using React and FastAPI, improving UI performance, scalability, and production-readiness for deployment across the Toppan Next Group's 2,000 users.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lyza Education}{Mar. 2024 -- May 2024}
+      {Software Engineer Intern}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Built and deployed a web-based learning management tool in Next.js used by 100+ students to submit assignments, track progress, and receive automated feedback on programming exercises.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{GroceryPicker} $|$ \small{\textbf{Independent Software Development Project (Orbital -- Apollo 11 Level)}}}{May 2025 -- Jul. 2025}
+          \resumeItemListStart
+            \resumeItem{Built an Android application with React Native + Express.js that returns the best prices for each grocery out of every major supermarket, allowing users to minimize spending with ease.}
+            \resumeItem{Implemented rigorous and scheduled web scraping of supermarket groceries with Playwright hosted on GCP to obtain a database of 50k groceries, which is stored in PostgreSQL (Supabase).}
+            \resumeItem{Developed an accurate RAG enhancement to LLM to allow sieving of cheapest groceries and semantic search.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Aimlabs \& Parkour}}{May 2024 -- Jul. 2024}
+          \resumeItemListStart
+            \resumeItem{Engineered a custom 3D game engine in C++ and OpenGL from scratch, implementing a scene graph, frustum culling, and a custom memory allocator to achieve stable 60+ FPS rendering on mid-range hardware.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------EXTRACURRICULAR ACTIVITIES-----------
+\section{EXTRACURRICULAR ACTIVITIES}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Google Developer Student Club @ NUS}{Aug. 2025 -- Present}
+      {Software Engineer}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Working with Caring For Life to build a full stack application with Next.js + FastAPI to streamline their onboarding, volunteer management and workflows.}
+        \resumeItem{Developed frontend pages with React and integrated API calls using TanStack.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {NUS Fintech Society}{Aug. 2025 -- Present}
+      {Software Engineer}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Building AI-powered itinerary planner with HeyMax.}
+        \resumeItem{Developed transcribers for popular social media platforms, converting social media posts into context for generation of itinerary plans.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages} {: Python, JavaScript, Java}\vspace{2pt} \\
+     \textbf{Frameworks} {: React, React Native, FastAPI, Next.js, Express.js}\vspace{2pt} \\
+     \textbf{Databases} {: PostgreSQL}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
