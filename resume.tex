@@ -56,8 +56,8 @@
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{0in}
 \addtolength{\textwidth}{1.2in}
-\addtolength{\topmargin}{-.9in}
-\addtolength{\textheight}{1.6in}
+\addtolength{\topmargin}{-1.0in}
+\addtolength{\textheight}{1.8in}
 
 \urlstyle{same}
 
@@ -103,6 +103,10 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeTeamLine}[1]{%
+  \vspace{2pt}\small{#1}\vspace{-4pt}%
+}
+
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -133,9 +137,9 @@
     \textbf{\LARGE Mah Hao Jun} \\ \vspace{3pt}
     \small \texttt{+65 9236 0786} \hspace{1pt} $|$
     \hspace{1pt} \href{mailto:mahhaojun03@gmail.com}{\texttt{mahhaojun03@gmail.com}} \hspace{1pt} $|$
-    \hspace{1pt} \href{https://www.linkedin.com/in/hao-jun-mah-7b22b7210/}{\myuline{LinkedIn}} \hspace{1pt} $|$
-    \hspace{1pt} \href{https://github.com/haojun-mah}{\myuline{GitHub}} \hspace{1pt} $|$
-    \hspace{1pt} \href{https://www.haojunmah.app}{\myuline{Portfolio}} \hspace{1pt}
+    \hspace{1pt} \href{https://www.linkedin.com/in/hao-jun-mah-7b22b7210/}{\myuline{linkedin.com/in/hao-jun-mah}} \hspace{1pt} $|$
+    \hspace{1pt} \href{https://github.com/haojun-mah}{\myuline{github.com/haojun-mah}} \hspace{1pt} $|$
+    \hspace{1pt} \href{https://www.haojunmah.app}{\myuline{haojunmah.app}} \hspace{1pt}
     \\ \vspace{-3pt}
 \end{center}
 
@@ -158,23 +162,28 @@
     \resumeSubheading
       {Citi}{Jun. 2026 -- Aug. 2026}
       {Software Engineer Intern}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Built a Grafana observability dashboard with alerting for a core banking platform, surfacing \textbf{real-time metrics} across \textbf{100,000+ daily corporate account transactions} to support operational monitoring.}
+        \resumeItem{Refactored a \textbf{Spring Boot} (\textbf{Java}) microservice codebase into \textbf{shared internal libraries}, eliminating code duplication across services and reducing estimated development time for future microservices by \textbf{15\%}.}
+        \resumeItem{Developed an end-to-end \textbf{Kafka} test suite that injects synthetic transactions and validates downstream service output, ensuring correctness across critical \textbf{event-driven processing pipelines}.}
+      \resumeItemListEnd
 
     \resumeSubheading
       {Fly Fairly}{Jan. 2026 -- Apr. 2026}
       {Software Engineer Intern}{Singapore}
       \resumeItemListStart
         \resumeItem{Identified and eliminated \textbf{3 key operational bottlenecks} through structured stakeholder interviews.}
-        \resumeItem{Built back-office reporting dashboard with \textbf{Next.js}, reducing cross-team coordination overhead and improving sprint throughput by an estimated \textbf{20\%}.}
-        \resumeItem{Proposed and documented modernized tech stack solutions for interviewed problems which are adopted into the technical roadmap for \textbf{3 out of 6} company's departments for future implementation.}
+        \resumeItem{Built a \textbf{Next.js} back-office reporting dashboard that centralized project metrics and reporting workflows, reducing manual cross-team status coordination and improving estimated sprint throughput by \textbf{20\%}.}
+        \resumeItem{Influenced technical roadmaps for \textbf{3 of 6} departments by documenting modernization proposals for stakeholder-identified workflow problems, including recommended architecture, implementation tradeoffs, and rollout plans.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Toppan Ecquaria}{May 2025 -- Jul. 2025}
       {Software Engineer Intern}{Singapore}
       \resumeItemListStart
-        \resumeItem{Designed and integrated \textbf{RAG pipelines} and \textbf{LLM-based AI agents} into enterprise SaaS products, enabling context-aware document Q\&A; deployed across \textbf{10+ client companies}, directly contributing to new product adoption and upsell opportunities.}
-        \resumeItem{Enhanced an AI lip dubbing system by leveraging open-source audio models such as Kokoro and the LatentSync lip-sync model, enabling multilingual AI video dubbing solutions sold at \textbf{\$5,000 per license}.}
-        \resumeItem{Refactored and modernized multiple web applications using \textbf{React} and \textbf{FastAPI}, improving UI performance, scalability, and production-readiness for deployment across the Toppan Next Group's \textbf{2,000 users}.}
+        \resumeItem{Integrated \textbf{RAG pipelines} and \textbf{LLM agents} into enterprise SaaS products, enabling context-aware document Q\&A across \textbf{10+ client deployments} and supporting new product adoption and upsell opportunities.}
+        \resumeItem{Enhanced a multilingual AI video dubbing product licensed at \textbf{\$5,000 per deployment} by integrating \textbf{Kokoro} audio generation and \textbf{LatentSync} lip-sync models to improve automated speech-to-video alignment.}
+        \resumeItem{Modernized \textbf{React} and \textbf{FastAPI} web applications used across Toppan Next Group by refactoring frontend components and backend APIs, improving maintainability and production readiness for a \textbf{2,000-user} deployment environment.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -184,15 +193,15 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{GroceryPicker} $|$ \small{\textbf{Independent Software Development Project (Orbital -- Apollo 11 Level)}}}{May 2025 -- Jul. 2025}
+          {\href{https://github.com/haojun-mah/GroceryPicker}{\textbf{\myuline{GroceryPicker}}} $|$ \small{\textbf{Independent Software Development Project (Orbital -- Apollo 11 Level)}}}{May 2025 -- Jul. 2025}
           \resumeItemListStart
             \resumeItem{Built an Android application with \textbf{React Native} + \textbf{Express.js} that returns the best prices for each grocery out of every major supermarket, allowing users to minimize spending with ease.}
             \resumeItem{Implemented rigorous and scheduled web scraping of supermarket groceries with \textbf{Playwright} hosted on \textbf{GCP} to obtain a database of \textbf{50k groceries}, which is stored in PostgreSQL (Supabase).}
-            \resumeItem{Developed an accurate \textbf{RAG} enhancement to \textbf{LLM} to allow sieving of cheapest groceries and semantic search.}
+            \resumeItem{Implemented retrieval-augmented semantic search over the \textbf{50k grocery records}, enabling users to query products by natural language and rank matching items by price.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Aimlabs \& Parkour}}{May 2024 -- Jul. 2024}
+          {\href{https://github.com/haojun-mah/parkour}{\textbf{\myuline{Aimlabs \& Parkour}}}}{May 2024 -- Jul. 2024}
           \resumeItemListStart
             \resumeItem{Engineered a custom \textbf{3D game engine} in \textbf{C++} and \textbf{OpenGL} from scratch, implementing a scene graph, frustum culling, and a custom memory allocator to achieve stable \textbf{60+ FPS} rendering on mid-range hardware.}
           \resumeItemListEnd
@@ -207,16 +216,14 @@
       {Google Developer Student Club @ NUS}{Aug. 2025 -- Present}
       {Software Engineer}{Singapore}
       \resumeItemListStart
-        \resumeItem{Working with Caring For Life to build a full stack application with Next.js + FastAPI to streamline their onboarding, volunteer management and workflows.}
-        \resumeItem{Developed frontend pages with React and integrated API calls using TanStack.}
+        \resumeItem{Building a \textbf{Next.js} + \textbf{FastAPI} volunteer platform with \textbf{React} and \textbf{TanStack Query} for real-time workflows.}
       \resumeItemListEnd
 
     \resumeSubheading
       {NUS Fintech Society}{Aug. 2025 -- Present}
       {Software Engineer}{Singapore}
       \resumeItemListStart
-        \resumeItem{Building AI-powered itinerary planner with HeyMax.}
-        \resumeItem{Developed transcribers for popular social media platforms, converting social media posts into context for generation of itinerary plans.}
+        \resumeItem{Building an \textbf{AI-powered itinerary planner} with HeyMax using social media transcription pipelines.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -225,9 +232,10 @@
 \section{SKILLS}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{Languages} {: Python, JavaScript, Java}\vspace{2pt} \\
-     \textbf{Frameworks} {: React, React Native, FastAPI, Next.js, Express.js}\vspace{2pt} \\
-     \textbf{Databases} {: PostgreSQL}
+     \textbf{Languages} {: Python, JavaScript, TypeScript, Java}\vspace{2pt} \\
+     \textbf{Frontend \& Backend} {: React, React Native, Next.js, FastAPI, Express.js}\vspace{2pt} \\
+     \textbf{Databases \& Cloud} {: PostgreSQL, Supabase, Google Cloud Platform}\vspace{2pt} \\
+     \textbf{Events \& Programmes} {: Jane Street PORTAL}
     }}
  \end{itemize}
 
