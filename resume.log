@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.5.16)  1 JUL 2026 21:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.5.16)  13 JUL 2026 22:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -459,9 +459,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 151.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 166.
-contour: Using 16 copies for `GroceryPicker' on input line 196.
-contour: Using 16 copies for `Aimlabs \& Parkour' on input line 204.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 170.
+contour: Using 16 copies for `GroceryPicker' on input line 200.
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 4.08003pt, for example:
@@ -476,13 +475,13 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: FB56C178DA9ED3349101F015BABAE89A;513.
+(rerunfilecheck)             Checksum: 249C345D69421622B1E7D31A83FAA979;337.
  ) 
 Here is how much of TeX's memory you used:
- 11255 strings out of 476182
- 174402 string characters out of 5795595
- 1970975 words of memory out of 5000000
- 33077 multiletter control sequences out of 15000+600000
+ 11253 strings out of 476182
+ 174382 string characters out of 5795595
+ 1962975 words of memory out of 5000000
+ 33076 multiletter control sequences out of 15000+600000
  597724 words of font info for 103 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,11n,79p,309b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -490,10 +489,10 @@ Here is how much of TeX's memory you used:
 600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on resume.pdf (1 page, 57996 bytes).
+Output written on resume.pdf (1 page, 57200 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 77 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

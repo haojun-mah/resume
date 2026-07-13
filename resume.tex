@@ -56,8 +56,8 @@
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{0in}
 \addtolength{\textwidth}{1.2in}
-\addtolength{\topmargin}{-1.0in}
-\addtolength{\textheight}{1.8in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
 
@@ -73,8 +73,8 @@
 % TODO EBSERIES
 % sans serif sections
 \titleformat {\section}{
-    \bfseries \vspace{-2pt} \raggedright \large % header section
-}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-2pt}]
 
 % only for pdflatex
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -93,7 +93,7 @@
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & {\color{black}\small #2}\vspace{0pt}\\ % top row of resume entry
       #3 & {\color{black} \small #4}\\ % second row of resume entry
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -121,8 +121,8 @@
 % CHANGED default leftmargin  0.15 in
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=-1pt, topsep=2pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt, topsep=3pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 \color{black}
 
@@ -134,13 +134,13 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\LARGE Mah Hao Jun} \\ \vspace{3pt}
+    \textbf{\LARGE HAO JUN MAH} \\ \vspace{3pt}
     \small \texttt{+65 9236 0786} \hspace{1pt} $|$
     \hspace{1pt} \href{mailto:mahhaojun03@gmail.com}{\texttt{mahhaojun03@gmail.com}} \hspace{1pt} $|$
     \hspace{1pt} \href{https://www.linkedin.com/in/hao-jun-mah-7b22b7210/}{\myuline{linkedin.com/in/hao-jun-mah}} \hspace{1pt} $|$
     \hspace{1pt} \href{https://github.com/haojun-mah}{\myuline{github.com/haojun-mah}} \hspace{1pt} $|$
     \hspace{1pt} \href{https://www.haojunmah.app}{\myuline{haojunmah.app}} \hspace{1pt}
-    \\ \vspace{-3pt}
+    \\ \vspace{4pt}
 \end{center}
 
 %-----------EDUCATION-----------
@@ -158,6 +158,10 @@
 %-----------EXPERIENCE-----------
 \section{EXPERIENCE}
   \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {TikTok}{Aug. 2026 -- Dec. 2026}
+      {Software Engineer Intern}{Singapore}
 
     \resumeSubheading
       {Citi}{Jun. 2026 -- Aug. 2026}
@@ -200,41 +204,16 @@
             \resumeItem{Implemented retrieval-augmented semantic search over the \textbf{50k grocery records}, enabling users to query products by natural language and rank matching items by price.}
           \resumeItemListEnd
 
-      \resumeProjectHeading
-          {\href{https://github.com/haojun-mah/parkour}{\textbf{\myuline{Aimlabs \& Parkour}}}}{May 2024 -- Jul. 2024}
-          \resumeItemListStart
-            \resumeItem{Engineered a custom \textbf{3D game engine} in \textbf{C++} and \textbf{OpenGL} from scratch, implementing a scene graph, frustum culling, and a custom memory allocator to achieve stable \textbf{60+ FPS} rendering on mid-range hardware.}
-          \resumeItemListEnd
-
     \resumeSubHeadingListEnd
-
-%-----------EXTRACURRICULAR ACTIVITIES-----------
-\section{EXTRACURRICULAR ACTIVITIES}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Google Developer Student Club @ NUS}{Aug. 2025 -- Present}
-      {Software Engineer}{Singapore}
-      \resumeItemListStart
-        \resumeItem{Building a \textbf{Next.js} + \textbf{FastAPI} volunteer platform with \textbf{React} and \textbf{TanStack Query} for real-time workflows.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {NUS Fintech Society}{Aug. 2025 -- Present}
-      {Software Engineer}{Singapore}
-      \resumeItemListStart
-        \resumeItem{Building an \textbf{AI-powered itinerary planner} with HeyMax using social media transcription pipelines.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
 \section{SKILLS}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{Languages} {: Python, JavaScript, TypeScript, Java}\vspace{2pt} \\
-     \textbf{Frontend \& Backend} {: React, React Native, Next.js, FastAPI, Express.js}\vspace{2pt} \\
+     \textbf{Languages} {: Python, JavaScript, TypeScript, Java, C++}\vspace{2pt} \\
+     \textbf{Frontend \& Backend} {: React, React Native, Next.js, FastAPI, Express.js, Spring Boot}\vspace{2pt} \\
      \textbf{Databases \& Cloud} {: PostgreSQL, Supabase, Google Cloud Platform}\vspace{2pt} \\
+     \textbf{Extracurricular Activities} {: Google Developer Student Club @ NUS, NUS Fintech Society}\vspace{2pt} \\
      \textbf{Events \& Programmes} {: Jane Street PORTAL}
     }}
  \end{itemize}
