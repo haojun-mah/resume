@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in LaTeX
+% Content: Hao Jun Mah
+% Template: Jake Gutierrez (https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.35in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\setlist[itemize]{topsep=5pt, parsep=0pt, partopsep=0pt}
+
+% Ensure generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeExperienceListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=9pt]}
+\newcommand{\resumeExperienceListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=3pt, topsep=4pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\LARGE Hao Jun Mah} \\ \vspace{0pt}
+    \small +65 9236 0786 $|$
+    \href{mailto:mahhaojun03@gmail.com}{\underline{mahhaojun03@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/hao-jun-mah-7b22b7210/}{\underline{linkedin.com/in/hao-jun-mah}} $|$
+    \href{https://github.com/haojun-mah}{\underline{github.com/haojun-mah}} $|$
+    \href{https://www.haojunmah.app}{\underline{haojunmah.app}}
+\end{center}
+\vspace{-3pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National University of Singapore}{Singapore}
+      {Bachelor of Computing, Computer Science}{Aug. 2024 -- May 2028}
+      \vspace{0pt}\\
+      \small{\textbf{Cumulative GPA}: First Class Honors}
+      \vspace{-2pt}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeExperienceListStart
+
+    \item Incoming Software Engineer Intern at \textbf{Squarepoint}
+
+    \resumeSubheading
+      {Software Engineer Intern}{Aug. 2026 -- Dec. 2026}
+      {TikTok}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Improved \textbf{two Golang backend services} and deployed them alongside a \textbf{relational database} and \textbf{TCC} configuration management on \textbf{USTTP2} to distribute production traffic and provide failover for USTTP1, supporting TikTok Backstage's \textbf{21,000 independent creator networks}.}
+        \resumeItem{Built automated end-of-day readiness checks for \textbf{Apache Airflow} data migration jobs to identify incomplete tasks and help developers pinpoint issues requiring investigation.}
+        \resumeItem{Extended these checks into reusable scripts for the Data Platform SRE agent's \textbf{knowledge base and skill library}, covering \textbf{Dorado} task status, \textbf{ClickHouse} partition validation, and queries per second (QPS) measurement.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{Jun. 2026 -- Aug. 2026}
+      {Citi}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{Grafana} observability dashboard backed by \textbf{SQL queries} to monitor \textbf{100,000+ daily corporate account transactions} on a core banking platform, with automated alerts to help operations teams detect issues.}
+        \resumeItem{Extracted reusable components from \textbf{Java/Spring Boot} microservices into \textbf{shared internal libraries}, removing duplicate code and reducing estimated development time for future microservices by \textbf{15\%}.}
+        \resumeItem{Developed an end-to-end test suite for \textbf{Kafka} processing pipelines, injecting synthetic transactions and validating downstream service outputs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{May 2025 -- Jul. 2025}
+      {Toppan Ecquaria}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Integrated \textbf{RAG pipelines} and \textbf{LLM agents} into enterprise SaaS products, enabling document Q\&A grounded in retrieved content across \textbf{10+ client deployments}.}
+        \resumeItem{Integrated \textbf{Kokoro} speech generation and \textbf{LatentSync} lip-sync models into a multilingual AI video dubbing product licensed at \textbf{\$5,000 per deployment}.}
+        \resumeItem{Refactored frontend components and backend APIs in \textbf{React} and \textbf{FastAPI} applications used across Toppan Next Group, improving maintainability in a \textbf{2,000-user} deployment environment.}
+      \resumeItemListEnd
+
+  \resumeExperienceListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\href{https://github.com/haojun-mah/GroceryPicker}{\underline{\textbf{GroceryPicker}}} $|$ \emph{NUS Orbital -- Apollo 11 Level}}{May 2025 -- Jul. 2025}
+      \resumeItemListStart
+        \resumeItem{Built an Android grocery price comparison app with \textbf{React Native} and \textbf{Express.js}, helping users find lower-priced products across major supermarkets.}
+        \resumeItem{Automated grocery data ingestion with scheduled \textbf{Playwright} scraping jobs on \textbf{Google Cloud Platform}, collecting and storing \textbf{50,000 grocery records} in \textbf{PostgreSQL (Supabase)}.}
+        \resumeItem{Implemented semantic search using Google's \textbf{text-embedding-004} model over \textbf{50,000 grocery records}, enabling natural language product queries and ranking matching items by price.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C++, SQL, TypeScript} \\
+     \textbf{Frontend \& Backend}{: React, React Native, Next.js, FastAPI, Express.js, Spring Boot} \\
+     \textbf{Databases \& Cloud}{: PostgreSQL, Supabase, Google Cloud Platform, Hetzner Cloud}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\section{Activities \& Insight Programmes}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Activities}{: Google Developer Student Club at NUS, NUS Fintech Society} \\
+     \textbf{Insight Programmes}{: Jane Street PORTAL, Optiver FutureFocus}
+    }}
+ \end{itemize}
+
+\end{document}
